@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>日本教育旅行・互動手冊</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap">
+<style>
+:root{--bg:#fff7e8;--card:#fff;--ink:#4a3320;--sub:#8a7360;--pink:#e8731a;--mint:#9ad68b;--sun:#ffd54a;--sky:#ffc27a;--line:#ffe0b0;--sh:0 6px 0 rgba(232,115,26,.22);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2b2117;--card:#3a2d20;--ink:#fff3e2;--sub:#d1bb9f;--line:#5a4430;--pink:#ff9a3d;--sh:0 6px 0 rgba(0,0,0,.3)}}
+:root[data-theme="dark"]{--bg:#2b2117;--card:#3a2d20;--ink:#fff3e2;--sub:#d1bb9f;--line:#5a4430;--pink:#ff9a3d;--sh:0 6px 0 rgba(0,0,0,.3)}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg) radial-gradient(var(--line) 2px,transparent 2px) 0 0/26px 26px;color:var(--ink);font-family:"Zen Maru Gothic","PingFang TC","Microsoft JhengHei",sans-serif;font-weight:500;line-height:1.6}
+.wrap{max-width:820px;margin:0 auto;padding:14px 14px 110px}
+.hero{text-align:center;padding:8px 0}
+h1{font-size:clamp(24px,6vw,34px);margin:0;font-weight:900}
+h1 b{display:inline-block;animation:bob 2.2s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px) rotate(-8deg)}}
+.sub{color:var(--sub);margin:2px 0}
+.card{background:var(--card);border:3px solid var(--line);border-radius:24px;padding:14px 16px;margin:12px 0;box-shadow:var(--sh)}
+h2{margin:0 0 8px;font-size:19px;font-weight:900}
+.cd{text-align:center;background:linear-gradient(135deg,var(--sun),#ffa94d);color:#3b2412;border:0}
+.cd big{font-size:54px;font-weight:900;display:block;line-height:1.1}
+.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1 1 140px}
+.tag{display:inline-block;border-radius:99px;padding:1px 10px;font-size:12px;font-weight:700;background:var(--sun);color:#4a3b52;margin-right:4px}
+.mini{background:var(--bg);border-radius:16px;padding:8px 12px;border:2px solid var(--line)}
+.mini b{color:var(--pink)}
+.tel{display:block;text-decoration:none;color:inherit}
+a.btn,.btn{border:0;border-radius:14px;padding:8px 14px;font:inherit;font-weight:700;cursor:pointer;color:#4a3b52;background:var(--mint);box-shadow:0 4px 0 rgba(0,0,0,.12);text-decoration:none;display:inline-block}
+.btn:active{transform:translateY(3px);box-shadow:none}
+details{background:var(--card);border:3px solid var(--line);border-radius:20px;margin:10px 0;overflow:hidden}
+summary{padding:12px 16px;font-weight:900;cursor:pointer;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";float:right;color:var(--pink)}
+details[open] summary::after{content:"－"}
+details>div{padding:0 16px 14px}
+details[open]{border-color:var(--pink)}
+ul{margin:6px 0;padding-left:20px}li{margin:3px 0}
+.spot{background:var(--bg);border-radius:14px;padding:8px 12px;margin:8px 0}
+.spot b{color:var(--pink)}
+.meal{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:8px;font-size:13px}
+.meal div{background:var(--bg);border-radius:12px;padding:6px 8px}
+.meal i{font-style:normal;display:block;font-weight:900}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td,th{padding:6px 8px;border-bottom:2px dashed var(--line);text-align:left;vertical-align:top}
+.chips span{display:inline-block;background:var(--bg);border:2px solid var(--line);border-radius:99px;padding:1px 10px;margin:3px 3px 0 0;font-weight:700;font-size:14px}
+.chips span.lead{background:var(--sun);border-color:var(--sun);color:#4a3b52}
+input[type=text]{width:100%;border:3px solid var(--line);background:var(--bg);color:var(--ink);border-radius:16px;padding:10px 14px;font:inherit;font-weight:700;outline:none}
+input[type=text]:focus{border-color:var(--pink)}
+.res{margin-top:10px}
+.me{display:flex;align-items:center;gap:10px;background:var(--bg);padding:8px 12px;border-radius:14px;margin:6px 0;cursor:pointer}
+.me label{flex:1;cursor:pointer}.me.ok{opacity:.55;text-decoration:line-through}
+input[type=checkbox]{width:22px;height:22px;accent-color:var(--pink)}
+.bar{height:14px;background:var(--line);border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--pink),var(--sun));width:0;transition:.3s}
+.ph{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:8px 0;border-bottom:2px dashed var(--line)}
+.ph b{font-size:17px}.ph small{color:var(--sub);display:block}
+.ph .r{color:var(--pink);font-size:13px;white-space:nowrap}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--card);border-top:3px solid var(--line);display:flex;gap:2px;overflow-x:auto;padding:6px 8px calc(6px + env(safe-area-inset-bottom,0px));z-index:5}
+nav button{flex:1 0 62px;border:0;background:none;color:var(--sub);font:inherit;font-size:11px;font-weight:700;padding:4px 2px;border-radius:14px;cursor:pointer}
+nav button span{display:block;font-size:22px}
+nav button.on{background:var(--pink);color:#fff;transform:translateY(-3px)}
+.warn{border-color:var(--sun)}
+.toast{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top,0px));transform:translate(-50%,-90px);background:var(--ink);color:var(--bg);padding:8px 16px;border-radius:99px;font-weight:700;transition:.3s;z-index:9}
+.toast.show{transform:translate(-50%,0)}
+.sec{display:none;animation:in .3s}.sec.on{display:block}
+@keyframes in{from{opacity:0;transform:translateY(10px)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hero"><h1><b>🍱</b> 日本教育旅行手冊 <b>🍡</b></h1><p class="sub">臺南二中・115 年 12 月 7 日–12 日</p></div>
+<div id="v"></div>
+</div>
+<nav id="nav"></nav>
+<div class="toast" id="toast"></div>
+<script>
+const $=s=>document.querySelector(s),E=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+const toast=m=>{const t=$("#toast");t.textContent=m;t.classList.add("show");setTimeout(()=>t.classList.remove("show"),1600)};
+const TABS=[["home","🏠","總覽"],["plan","🗓️","行程"],["ppl","👫","人員"],["sch","🏫","林野高校"],["host","🏡","寄宿"],["tips","📖","須知"],["pack","🎒","行李"],["jp","🗣️","日文"],["sos","🚨","緊急"]];
+const HOTELS=[["12/7（一）","兵庫","姬路蒙特利飯店","+81-79-224-7111"],["12/8（二）","岡山","湯鄉格蘭溫泉飯店","+81-570-097-780"],["12/9（三）","","溫馨的寄宿家庭","帶過夜包"],["12/10（四）","兵庫","神戶波多比亞飯店","+81-78-302-1111"],["12/11（五）","大阪","大阪灣格蘭王子飯店","+81-6-6612-1234"],["12/12（六）","台灣","溫暖的家",""]];
+const DAYS=[
+["12/7（一）","出發・姬路城","臺南二中 → 高雄機場 → 關西空港 → 明石海峽大橋 → 姬路城",[["明石海峽大橋","位於神戶與淡路島之間，世界第二長吊橋，被稱為「夢之吊橋」。"],["姬路城","外型像白鷺展翅，又名白鷺城，是日本首座世界文化遺產城堡，也是現存十二天守中最高的一座。"]],["機上套餐","美味壽司","日式涮涮鍋"]],
+["12/8（二）","林野高校交流","參訪岡山縣立林野高等學校（整天）",[["林野高校","10:00–16:00，歡迎儀式、入班上課、午餐交流、團體活動，詳見「林野高校」頁。"]],["飯店內","學校內","飯店內"]],
+["12/9（三）","交流＋寄宿家庭","林野高校 → 農村生活體驗 → 寄宿家庭",[["林野高校","8:30–12:30，Show & Tell、歡送會及午餐。"],["農村生活體驗","體驗日本在地生活方式與鄉村文化。"]],["飯店內","學校內","寄宿家庭"]],
+["12/10（四）","倉敷・後樂園","倉敷美觀地區 → 切子燈籠工藝體驗 → 岡山後樂園",[["倉敷美觀地區","國家指定傳統建築物群保存地區，有倉敷帆布、丹寧品牌店與古宅咖啡館。"],["岡山後樂園","日本三大名園之一，1952 年被指定為特別名勝。"]],["寄宿家庭","發代金 日幣 3500","日式風味餐"]],
+["12/11（五）","神戶・大阪","北野異人館 → 神戶遊輪 → 人與防災未來中心 → 心齋橋、道頓堀",[["北野異人館","風見雞館（舊托馬斯館，紅磚與尖塔風向雞）與萌黃館（淡綠色外牆的明治洋宅）。"],["人與防災未來中心","紀念 1995 年阪神・淡路大地震，學習防災知識。"],["心齋橋・道頓堀","大阪最繁華的購物區；道頓堀有固力果等霓虹招牌，被稱為「食倒之城」。"]],["飯店內","船上美食","發代金 日幣 4000"]],
+["12/12（六）","住吉大社・返家","住吉大社 → 關西空港 → 高雄機場 → 臺南二中",[["住吉大社","超過 1,800 年歷史，為全日本約 2,300 座住吉神社的總本社，有太鼓橋、招福貓與兔子御守。"]],["飯店內","機上套餐","溫暖的家"]]];
+const TEA=["林晏旭","賴莞容","李貞縈"],TR=["校長","主任","組長"];
+const GR=[["黃安綺","詹庭瑜","王彤云","顏守晟","楊錚"],["洪翊瑋","蔡易辰","施卓妤","劉美緹","孫唯榛"],["凃昕佑","郭軒睿","何柏毅","陳玠伃","林苙穎"],["汪品宜","黃允臻","鄭秉軒","陳毅勳","林祈叡"],["鄭皓介","郭品毅","陳加豪","鄭允晨","李佳恩"],["林新閎","陳亮宇","李峟緯","蘇婕欣","王漱青"]];
+const CN=["一","二","三","四","五","六"];
+const ACT={"烹飪":"林新閎 陳亮宇 凃昕佑 郭軒睿 鄭秉軒 蔡易辰 劉美緹 李峟緯 陳加豪 孫唯榛","劍道":"楊錚 林祈叡 何柏毅 郭品毅 鄭皓介 黃允臻 汪品宜 王漱青 蘇婕欣 顏守晟","茶道及古箏":"李佳恩 林苙穎 陳玠伃 王彤云 黃安綺 詹庭瑜 陳毅勳 施卓妤 洪翊瑋 鄭允晨"};
+const FAM={"農家民宿ほわ":"鄭允晨 李佳恩 蘇婕欣 王漱青","ナノビレッジ岡山":"黃安綺 詹庭瑜 王彤云 陳玠伃 林苙穎","農家民宿みっちゃん家":"施卓妤 劉美緹 孫唯榛 汪品宜 黃允臻","小森のツキノシタ":"凃昕佑 郭軒睿 何柏毅 鄭秉軒 陳毅勳 林祈叡","古民家HAKKOU":"顏守晟 楊錚 林新閎 陳亮宇 李峟緯","ととのうファーム":"洪翊瑋 蔡易辰 鄭皓介 郭品毅 陳加豪"};
+const HR=["進門說「こんにちは」，在土間（平地）脫鞋，鞋尖朝向門口排好，腳不要先踩外面的地板。","幫忙做家務，遵守接待家庭的吩咐。","睡衣、毛巾、牙刷、牙膏自備；洗護髮可用家裡的。","勤洗手、勤漱口；外出回來與用餐前務必洗手。","盡量帶背包，不拖行李箱；室內輪子行李要用手提。","一起做飯前先洗手；咳嗽、打噴嚏請轉身，擤鼻涕請離席。","穿弄髒也沒關係的衣服（便服或運動服）。","注意浴室、洗手間使用時間；衛生紙丟馬桶，生理用品丟垃圾桶；共用浴缸熱水，先洗好身體再泡，勿拔水塞。","積極與接待家庭對話交流。","受傷或不舒服一定要告訴接待家庭；任何情況都不要服用對方的常備藥。","寵物或食物過敏請如實申報。","玩鬧損壞物品要賠償；貴重物品自己保管。","就寢後不要喧鬧；睡覺要換睡衣。","外出要有接待家庭陪同；不使用香氣太重的香水。"];
+const TIPS=[
+["✈️ 報到與行李",["起飛前 2–2.5 小時到機場櫃檯報到，請準時集合。","免費托運 1 件（23 公斤，長寬高合計不超過 158 公分）；手提 1 件 7 公斤。","團體機票不能預選座位，同行者可能不在一起。","液體、膠狀、噴霧類每瓶不超過 100 毫升，裝入 1 個透明夾鍊袋（總量 1 公升內）。"]],
+["🔋 鋰電池規定",["行動電源、手機與相機電池、藍牙耳機（含充電盒）只能手提，不能托運，需標示 100Wh 以下。","2026/3/31 起每人最多帶 2 個行動電源，飛行中禁止使用與充電。","日本出境時，內建電池的充電式整髮器不能手提或托運。"]],
+["🛂 護照與入境",["持中華民國護照免簽證，效期需 6 個月以上，停留不超過 90 天。","護照請自己保管，不要交給他人；日本警察可能查驗，須隨身攜帶。","日本入境攜帶現金超過 100 萬日圓需申報。","不要幫別人帶東西，也不要攜帶肉製品入境（日本、台灣都重罰）。"]],
+["🛡️ 安全守則",["團體行動，離隊要經領隊同意。","財物與證件隨身攜帶，不放房間、車上；不要在公共場合展示一疊鈔票。","自助早餐時特別留意隨身包包。","非行程內的自費活動不建議參加。","建議自備快篩試劑與常備藥（退燒、胃腸、感冒、暈車等）。"]],
+["🏨 飯店禮儀",["進房後扣上安全鎖，先確認逃生路線；記住領隊與師長的房號。","不穿睡衣或內衣出房間，公共場合不穿拖鞋。","房間內吧台零食與冰箱飲料要付費；電視黑盒子與確認鍵不要亂按。","電熱水壺只能煮水，不用多插頭延長線，不在燈具上晾衣物。","外出帶飯店名片，結伴同行。"]],
+["♨️ 泡溫泉禮儀",["空腹、飲酒後、剛吃飽不要泡；先洗淨身體，要全裸入浴。","水溫 41 度以下較安全，每次 15 分鐘內，先用熱水淋濕頭與身體。","有傷口、皮膚病、心臟病者不要泡；有刺青者不能進大浴場。","泡完讓身體自然乾，不用毛巾擦。"]],
+["🍱 餐廳與飲食",["日本自來水冷水可生飲，熱水需煮沸。","餐廳不能臨時更改餐點；宗教與過敏需求請事先告知。","不要在餐廳內飲用自備飲料。","路途遙遠可能誤餐，建議準備零食；冬天先喝溫水或熱湯暖胃。"]],
+["🌤️ 生活資訊",["時差：比台灣快 1 小時。","電壓 100V，插頭為雙腳；大阪、神戶地區頻率 60 赫茲。","12 月寒冷乾燥，帶保暖外套、防滑防水鞋，以及乳液與護唇膏。","日本車靠左行駛；商店和餐廳不收外幣，可多用信用卡。","遺失物品可打 110 詢問警察；緊急事故打 119。"]],
+["🛃 返台入境",["不可攜帶電子菸、水果、肉製品及其加工品（含真空包裝）。","違規攜帶肉製品入境台灣，罰款 20 萬至 100 萬元。","每人 3C 產品上限 5 部，免稅額 2 萬元。","下機後請主動把動植物產品丟進棄置箱。"]]];
+const PK=["衣服、襪子、鞋子、帽子、手套、內衣褲","眼鏡、隱形眼鏡、太陽眼鏡","防曬用品","清潔保養用品","衛生紙、面紙","常備藥品","口罩","外套","毛巾、牙刷、牙膏","保溫瓶","相機、電池、充電器","護照","日幣、信用卡","兩吋照片數張","雨傘、輕便雨衣","變壓器、萬用插座","手機、充電器","好走的鞋子","隨身小行李包","學校規定服裝（制服、運動服、團服）","室內運動鞋（依學校規定）","學生證"];
+const JP=[["打招呼",[["早安","おはようございます","o-ha-yo-u go-za-i-ma-su"],["你好","こんにちは","ko-n-ni-chi-wa"],["晚安","こんばんは","ko-n-ba-n-wa"],["睡前晚安","おやすみなさい","o-ya-su-mi-na-sa-i"],["初次見面","はじめまして","ha-ji-me-ma-shi-te"],["請多多指教","どうぞよろしくお願いします","do-u-zo yo-ro-shi-ku o-ne-ga-i shi-ma-su"],["再見","さようなら","sa-yo-u-na-ra"]]],
+["自我介紹",[["我來自台灣的學生","私は台湾から来た学生です","wa-ta-shi wa Taiwan ka-ra ki-ta ga-ku-se-i de-su"],["很高興見到你","お会いできて嬉しいです","o-a-i de-ki-te u-re-shi-i de-su"],["你好嗎？","お元気ですか？","o-ge-n-ki de-su ka"]]],
+["感謝與道歉",[["謝謝","ありがとうございます","a-ri-ga-to-u go-za-i-ma-su"],["不客氣","どういたしまして","do-u-i-ta-shi-ma-shi-te"],["不好意思","すみません","su-mi-ma-se-n"],["對不起","ごめんなさい","go-me-n-na-sa-i"]]],
+["提問與請求",[["我不懂日文","私は日本語がわかりません","wa-ta-shi wa ni-ho-n-go ga wa-ka-ri-ma-se-n"],["請說慢一點","ゆっくり言ってください","yu-k-ku-ri i-t-te ku-da-sa-i"],["請再說一次","もう一度言ってください","mo-u i-chi-do i-t-te ku-da-sa-i"],["廁所在哪裡？","トイレはどこですか？","to-i-re wa do-ko de-su ka"],["這是什麼？","これは何ですか？","ko-re wa na-n de-su ka"],["請給我看～","～を見せてください","～wo mi-se-te ku-da-sa-i"],["可以一起拍照嗎？","一緒に写真を撮ってもいいですか？","i-s-sho-ni sha-shi-n wo to-t-te mo i-i de-su ka"],["請等一下","ちょっと待ってください","cho-t-to ma-t-te ku-da-sa-i"]]],
+["離別與用餐",[["留下美好的回憶","良い思い出になりました","yo-i o-mo-i-de ni na-ri-ma-shi-ta"],["今天很愉快","今日、楽しかったです","kyo-u ta-no-shi-ka-t-ta de-su"],["開動了","いただきます","i-ta-da-ki-ma-su"]]]];
+const SOS=[["日本東京辦事處","(03)3280-7811"],["緊急聯絡電話","080-6552-4764"],["外交部駐外館處緊急專線","001-800-0885-0885"],["海外救援 24 小時專線","001+010+886+2-2511-9266"]];
+let S={};try{S=JSON.parse(localStorage.getItem("trip")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("trip",JSON.stringify(S))}catch(e){}};
+const chips=a=>`<div class="chips">${a.map(n=>`<span>${E(n)}</span>`).join("")}</div>`;
+const V={
+home(){const d=Math.ceil((new Date(2026,11,7)-new Date(new Date().toDateString()))/864e5);
+return `<div class="card cd">${d>0?`<small>距離出發還有</small><big>${d} 天</big>`:d==0?`<big>今天出發！🛫</big>`:`<big>旅程進行中 ✨</big>`}</div>
+<div class="card"><h2>🛫 出發資訊</h2><div class="row"><div class="mini"><b>集合</b><br>12/7 早上 3:20<br>臺南二中校門口</div><div class="mini"><b>出發</b><br>早上 3:30</div><div class="mini"><b>人數</b><br>33 + 1 人</div></div></div>
+<div class="card"><h2>✈️ 航班</h2><table><tr><td>12/7（一）</td><td>高雄 → 大阪<br>BR182</td><td>07:05 → 10:55</td></tr><tr><td>12/12（六）</td><td>大阪 → 高雄<br>BR181</td><td>11:55 → 14:30</td></tr></table></div>
+<div class="card"><h2>🏨 住宿</h2>${HOTELS.map(h=>`<div class="ph"><div><b>${h[2]}</b><small>${h[0]} ${h[1]}</small></div><div class="r">${h[3].startsWith("+")?`<a href="tel:${h[3].replace(/-/g,"")}">${h[3]}</a>`:h[3]}</div></div>`).join("")}</div>
+<p class="sub" style="text-align:center">行程順序可能因學校、天候與交通調整，但景點不會減少。</p>`},
+plan(){return `<p class="sub">點開看每天的景點與餐食 👇</p>`+DAYS.map((d,i)=>`<details ${i==0?"open":""}><summary>Day ${i+1}｜${d[0]}　${d[1]}</summary><div><p><b>${d[2]}</b></p>${d[3].map(s=>`<div class="spot"><b>${s[0]}</b><br>${s[1]}</div>`).join("")}<div class="meal"><div><i>🌅 早</i>${d[4][0]}</div><div><i>☀️ 午</i>${d[4][1]}</div><div><i>🌙 晚</i>${d[4][2]}</div></div></div></details>`).join("")},
+ppl(){return `<div class="card"><h2>🔍 找我的行程</h2><input type="text" id="q" placeholder="輸入姓名，例如 黃安綺"><div class="res" id="res"></div></div>
+<div class="card"><h2>👩‍🏫 帶隊師長</h2><div class="chips">${TEA.map((n,i)=>`<span class="lead">${TR[i]}｜${n}</span>`).join("")}</div></div>
+${GR.map((g,i)=>`<div class="card"><h2>第${CN[i]}組</h2><div class="chips"><span class="lead">組長 ${g[0]}</span>${g.slice(1).map(n=>`<span>${n}</span>`).join("")}</div></div>`).join("")}`},
+sch(){return `<div class="card"><h2>🏫 岡山縣立林野高等學校</h2><p>位於岡山縣北東部美作市的全日制普通高中，1908 年創立，前身為倉敷女子學校，2018 年迎來創校 110 週年。2004 年與大原高校、2007 年與英田商業高校整併後，成為美作市唯一的公立高中。</p><p><span class="tag">教育目標</span>培養有智慧與文化、身心健康、獨立自主的人；具備邏輯思考、創造力與解決問題能力；透過主動參與社會，培養人際能力。</p></div>
+<div class="card"><h2>📅 12/8（二）10:00–16:00</h2><table>${[["10:00","抵達學校"],["10:30–11:15","歡迎儀式"],["11:25–12:10","入班上課"],["12:10–12:55","午餐交流"],["12:55–13:40","入班上課"],["13:50–15:30","團體活動（烹飪、劍道、茶道及古箏）"],["16:00","離開"]].map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td></tr>`).join("")}</table></div>
+<div class="card"><h2>🎎 12/8 團體活動分組</h2>${Object.entries(ACT).map(([k,v])=>`<p><span class="tag">${k}</span></p>${chips(v.split(" "))}`).join("")}</div>
+<div class="card"><h2>📅 12/9（三）8:30–12:30</h2><table>${[["8:30","抵達學校"],["8:40–10:20","Show & Tell 活動"],["10:30–12:10","歡送會及午餐"],["12:30","離開"]].map(r=>`<tr><td><b>${r[0]}</b></td><td>${r[1]}</td></tr>`).join("")}</table></div>`},
+host(){return `<div class="card warn"><h2>🏡 寄宿家庭分配（12/9）</h2><p class="sub">過夜包要帶好喔！</p>${Object.entries(FAM).map(([f,m])=>`<p><span class="tag">${f}</span></p>${chips(m.split(" "))}`).join("")}</div>
+<h2>📜 寄宿家庭注意事項</h2>${HR.map((t,i)=>`<div class="me" style="cursor:default"><b style="color:var(--pink)">${i+1}</b><span>${t}</span></div>`).join("")}`},
+tips(){return TIPS.map(t=>`<details><summary>${t[0]}</summary><div><ul>${t[1].map(x=>`<li>${x}</li>`).join("")}</ul></div></details>`).join("")},
+pack(){const c=S.pack||{},n=PK.filter((_,i)=>c[i]).length;return `<div class="card"><h2>🎒 行李清單小幫手</h2><div class="bar"><i style="width:${n/PK.length*100}%"></i></div><p class="sub">已準備 ${n} / ${PK.length} 項 ${n==PK.length?"🎉":""}</p><button class="btn" id="rst">重新開始</button></div>`+PK.map((t,i)=>`<div class="me ${c[i]?"ok":""}"><input type="checkbox" id="k${i}" data-k="${i}" ${c[i]?"checked":""}><label for="k${i}">${t}</label></div>`).join("")},
+jp(){return `<p class="sub">點「複製」可以貼給日本朋友看 😊</p>`+JP.map((g,i)=>`<details ${i==0?"open":""}><summary>${g[0]}</summary><div>${g[1].map(p=>`<div class="ph"><div><b>${p[1]}</b><small>${p[0]}｜${p[2]}</small></div><button class="btn" data-c="${E(p[1])}">複製</button></div>`).join("")}</div></details>`).join("")},
+sos(){return `<div class="card warn"><h2>🚨 日本緊急電話</h2><div class="row"><a class="btn tel" href="tel:110" style="background:#7cc4f0">警察 110</a><a class="btn tel" href="tel:119" style="background:#ef5b4c;color:#fff">急救・火警 119</a></div></div>
+<div class="card"><h2>📞 緊急聯絡</h2>${SOS.map(s=>`<div class="ph"><div><b>${s[0]}</b></div><a class="btn" href="tel:${s[1].replace(/[^\d+]/g,"")}">${s[1]}</a></div>`).join("")}</div>
+<div class="card"><h2>🦠 傳染病預防</h2><ul><li>用肥皂勤洗手、吃熟食、喝瓶裝水。</li><li>噴防蚊液，避免蚊蟲叮咬。</li><li>不接觸禽鳥、犬貓與野生動物。</li><li>自備口罩、乾洗手與常備藥品。</li></ul></div><p class="sub" style="text-align:center">祝您一路順風，旅途愉快！🍊</p>`}};
+let cur=localStorage.getItem?"home":"home";
+function go(k){cur=k;$("#nav").innerHTML=TABS.map(t=>`<button class="${t[0]==k?"on":""}" data-t="${t[0]}"><span>${t[1]}</span>${t[2]}</button>`).join("");$("#v").innerHTML=`<div class="sec on">${V[k]()}</div>`;scrollTo(0,0)}
+document.addEventListener("click",e=>{const t=e.target.closest("[data-t]");if(t){go(t.dataset.t);return}
+const c=e.target.closest("[data-c]");if(c){const x=c.dataset.c,ok=()=>toast("已複製 ✨");(navigator.clipboard?navigator.clipboard.writeText(x):Promise.reject()).then(ok).catch(()=>{const a=document.createElement("textarea");a.value=x;document.body.appendChild(a);a.select();try{document.execCommand("copy");ok()}catch(_){}a.remove()})}
+if(e.target.id==="rst"){S.pack={};save();go("pack")}});
+document.addEventListener("change",e=>{const k=e.target.dataset.k;if(k!==undefined){(S.pack=S.pack||{})[k]=e.target.checked;save();const y=scrollY;go("pack");scrollTo(0,y)}});
+document.addEventListener("input",e=>{if(e.target.id!=="q")return;const q=e.target.value.trim(),r=$("#res");if(!q){r.innerHTML="";return}
+const hit=[...TEA,...GR.flat()].filter(n=>n.includes(q));
+r.innerHTML=hit.length?hit.slice(0,5).map(n=>{const g=GR.findIndex(x=>x.includes(n)),a=Object.keys(ACT).find(k=>ACT[k].includes(n)),f=Object.keys(FAM).find(k=>FAM[k].includes(n));
+return g<0?`<div class="mini" style="margin:6px 0"><b>${n}</b>｜${TR[TEA.indexOf(n)]}，帶隊師長 👩‍🏫</div>`:`<div class="mini" style="margin:6px 0"><b>${n}</b>｜第${CN[g]}組${GR[g][0]==n?"（組長）":""}<br>🎎 12/8 活動：${a}<br>🏡 12/9 寄宿：${f}</div>`}).join(""):`<p class="sub">找不到這個名字 🐾</p>`});
+go("home");
+</script>
+</body>
+</html>
